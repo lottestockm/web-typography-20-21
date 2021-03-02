@@ -114,3 +114,5 @@ iframe {
 .sound1 iframe {
 	transform: rotate(1turn);
 }
+
+/* The moment the class .sound1 is added to the body, the background is yellow */
