@@ -37,13 +37,13 @@ iframe {
     font-style: Normal;
     font-weight: 400;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     
 }
 
 /* mr Gosling */
 .voice2 {
-    font-family: "Brenner Regular";
+    font-family: "Brenner Sans";
     font-style: Normal;
     font-weight: 400;
     
@@ -54,7 +54,20 @@ iframe {
 
 .voice3 {
     color: white;
+    font-family: "Brenner Sans";
+    font-style: Italic;
+    font-weight: 700;
 }
+
+.voice4 {
+    color: white;
+    font-family: "Brenner Sans";
+    font-style: Italic;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -154,17 +167,7 @@ You probably want to change the styling.
     color: white;
 }
 
-/*zin 7 */
-/*
-.p6 span {
-        opacity: 0;
-        transition: 0.5s;
-        animation: groter 0.5s ease;
 
-}
-.p6.on span:first-of-type {
-    opacity: 1;
-*/
     
 }
 /*zin 9 */
@@ -181,8 +184,156 @@ You probably want to change the styling.
 
 .p8.on span:first-of-type {
     opacity: 1;
-    font-size: 24px;
 }
+
+/* zin 10 */
+.p9 span {
+    opacity: 0;
+}
+
+.p9.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 13 */
+.p12 span {
+    opacity: 0;
+}
+
+.p12.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 16 */
+.p15 span {
+    opacity: 0;
+}
+
+.p15.on span {
+    opacity: 1;
+    color: burlywood;
+}
+/* zin 19 */
+.p18 span {
+    opacity: 0;
+}
+
+.p18.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 21 */
+.p20 span {
+    opacity: 0;
+}
+
+.p20.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 24 */
+.p23 span {
+    opacity: 0;
+}
+
+.p23.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 27 */
+.p26 span {
+    opacity: 0;
+}
+
+.p26.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 30 */
+.p29 span {
+    opacity: 0;
+}
+
+.p29.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 32 */
+.p31 span {
+    opacity: 0;
+}
+
+.p31.on span {
+    opacity: 1;
+    color: burlywood;
+}
+/* zin 35 */
+.p34 span {
+    opacity: 0;
+}
+
+.p34.on span {
+    opacity: 1;
+    color: burlywood;
+}
+/* zin 38 */
+.p37 span {
+    opacity: 0;
+}
+
+.p37.on span {
+    opacity: 1;
+    color: burlywood;
+}
+/* zin 40 */
+.p39 span {
+    opacity: 0;
+}
+
+.p39.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 42 */
+.p41 span {
+    opacity: 0;
+}
+
+.p41.on span {
+    opacity: 1;
+    color: burlywood;
+}
+
+/* zin 43 */
+.p42 span {
+    opacity: 0;
+}
+
+.p42.on span {
+    opacity: 1;
+    color: burlywood;
+    font-size: 19px;
+}
+
+/* zin 44 */
+.p43 span {
+    opacity: 0;
+}
+
+.p43.on span {
+    opacity: 1;
+    color: burlywood;
+    font-size: 20px;
+}
+
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can 
@@ -198,7 +349,7 @@ Sounds.
     
 }
 .sound4 {
-    background: red;
+    background: darkred;
 }
 
 .sound5 {
@@ -209,18 +360,19 @@ Sounds.
 }
 .sound6 .voice3 {
 /*
+
     font-size: 5em;
     transition: 0.5s;
 */
-/*    animation: groter 0.5s ease;*/
+
 }
 
 .sound7 .voice3 {
-    
+    animation: groter 0.5s ease;
 }
 
 .sound8 {
-    background: red;
+    background-color: darkred;
 }
 
 .sound9 {
@@ -241,14 +393,39 @@ iframe {
 }
 
 .sound10 iframe {
-    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-        -0.025em -0.05em 0 rgba(0,255,0,0.75),
-        0.025em 0.05em 0 rgba(0,0,255,0.75);
-    animation: glitchvideo 500ms;
-    animation-iteration-count: 84;
+    box-shadow: 0.02em 0 0 rgba(255, 0, 0, 0.75),
+      -0.02em -0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.01em 0.02em 0 rgba(0, 0, 255, 0.75);
+    animation: glitchvideo 500ms ;
+    animation-iteration-count: 42;
 }
 
 .sound11 iframe {
+    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0,255,0,0.75),
+        0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitchvideo2 500ms ;
+    animation-iteration-count: 20;
+
+    
+}
+.sound12 iframe {
+    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0,255,0,0.75),
+        0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitchvideo3 500ms ;
+    animation-iteration-count: 12;
+}
+
+.sound13 iframe {
+    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0,255,0,0.75),
+        0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitchvideo4 500ms ;
+    animation-iteration-count: 8;
+}
+
+.sound14 iframe {
     box-shadow: none;
 }
 
@@ -264,41 +441,43 @@ body {
 }
 
 /* animatie */
+/*
 @keyframes glitch {
   0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.02em 0 0 rgba(255, 0, 0, 0.75),
+      -0.02em -0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.01em 0.02em 0 rgba(0, 0, 255, 0.75);
   }
   14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.02em 0 0 rgba(255, 0, 0, 0.75),
+      -0.02em -0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.01em 0.02em 0 rgba(0, 0, 255, 0.75);
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.02em -0.01em 0 rgba(255, 0, 0, 0.75),
+      0.01em 0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.02em -0.02em 0 rgba(0, 0, 255, 0.75);
   }
   49% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.02em -0.01em 0 rgba(255, 0, 0, 0.75),
+      0.01em 0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.02em -0.02em 0 rgba(0, 0, 255, 0.75);
   }
   50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.01em 0.02em 0 rgba(255, 0, 0, 0.75),
+      0.02em 0 0 rgba(0, 255, 0, 0.75), 0 -0.02em 0 rgba(0, 0, 255, 0.75);
   }
   99% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.01em 0.02em 0 rgba(255, 0, 0, 0.75),
+      0.02em 0 0 rgba(0, 255, 0, 0.75), 0 -0.02em 0 rgba(0, 0, 255, 0.75);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.01em 0 0 rgba(255, 0, 0, 0.75),
+      -0.01em -0.01em 0 rgba(0, 255, 0, 0.75),
+      -0.01em -0.01em 0 rgba(0, 0, 255, 0.75);
   }
 }
+*/
 
 @keyframes glitchvideo {
   0% {
@@ -336,14 +515,122 @@ body {
   }
 }
 
+@keyframes glitchvideo2 {
+  0% {
+    box-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75),
+      -0.2em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.1em 0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    box-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75),
+      -0.2em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.05em 0.1em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    box-shadow: -0.2em -0.1em 0 rgba(255, 0, 0, 0.75),
+      0.1em 0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.2em -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    box-shadow: -0.2em -0.1em 0 rgba(255, 0, 0, 0.75),
+      0.1em 0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.2em -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    box-shadow: 0.1em 0.2em 0 rgba(255, 0, 0, 0.75),
+      0.2em 0 0 rgba(0, 255, 0, 0.75), 0 -0.1em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    box-shadow: 0.1em 0.2em 0 rgba(255, 0, 0, 0.75),
+      0.2em 0 0 rgba(0, 255, 0, 0.75), 0 -0.1em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    box-shadow: -0.1em 0 0 rgba(255, 0, 0, 0.75),
+      -0.1em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.1em -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes glitchvideo3 {
+  0% {
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.75),
+      -0.4em -0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.3em 0.4em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.75),
+      -0.4em -0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.1em 0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    box-shadow: -0.4em -0.3em 0 rgba(255, 0, 0, 0.75),
+      0.3em 0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.4em -0.4em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    box-shadow: -0.4em -0.3em 0 rgba(255, 0, 0, 0.75),
+      0.3em 0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.4em -0.4em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    box-shadow: 0.3em 0.4em 0 rgba(255, 0, 0, 0.75),
+      0.4em 0 0 rgba(0, 255, 0, 0.75), 0 -0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    box-shadow: 0.3em 0.4em 0 rgba(255, 0, 0, 0.75),
+      0.4em 0 0 rgba(0, 255, 0, 0.75), 0 -0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    box-shadow: -0.3em 0 0 rgba(255, 0, 0, 0.75),
+      -0.3em -0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.3em -0.4em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes glitchvideo4 {
+  0% {
+    box-shadow: 0.6em 0 0 rgba(255, 0, 0, 0.75),
+      -0.6em -0.05em 0 rgba(0, 255, 0, 0.75),
+      -0.5em 0.06em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    box-shadow: 0.6em 0 0 rgba(255, 0, 0, 0.75),
+      -0.6em -0.5em 0 rgba(0, 255, 0, 0.75),
+      -0.2em 0.5em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    box-shadow: -0.06em -0.5em 0 rgba(255, 0, 0, 0.75),
+      0.6em 0.5em 0 rgba(0, 255, 0, 0.75),
+      -0.6em -0.6em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    box-shadow: -0.6em -0.5em 0 rgba(255, 0, 0, 0.75),
+      0.6em 0.5em 0 rgba(0, 255, 0, 0.75),
+      -0.6em -0.5em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    box-shadow: 0.6em 0.06em 0 rgba(255, 0, 0, 0.75),
+      0.6em 0 0 rgba(0, 255, 0, 0.75), 0 -0.5em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    box-shadow: 0.6em 0.6em 0 rgba(255, 0, 0, 0.75),
+      0.6em 0 0 rgba(0, 255, 0, 0.75), 0 -0.5em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    box-shadow: -0.5em 0 0 rgba(255, 0, 0, 0.75),
+      -0.5em -0.05em 0 rgba(0, 255, 0, 0.75),
+      -0.5em -0.6em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
 @keyframes groter {
     0%{
-        transform: scale(1);
+        transform: scale(0.9);
     }
     50%{
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
     100%{
-        transform: scale(1);
+        transform: scale(0.9);
     }
 }
