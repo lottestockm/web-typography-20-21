@@ -31,6 +31,16 @@ iframe {
     height: 60vh;
 }
 
+.texts {
+    height: 3em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 1em;
+    color: white;
+}
+
 /* machine */
 .voice1 {
     font-family: "Brenner Mono";
@@ -48,7 +58,7 @@ iframe {
     font-weight: 400;
     
     font-size: 18px;
-    color: white;
+    color: burlywood;
     
 }
 
@@ -157,14 +167,12 @@ You probably want to change the styling.
 
 .p1.on span:first-of-type {
     opacity: 1;
-    color: white;
     
     
 }
 
 .p1.on span:nth-of-type(2) {
     opacity: 1;
-    color: white;
 }
 
 
@@ -345,11 +353,9 @@ Sounds.
 .sound0 {
     background: black;
 }
-.sound1 {
-    
-}
+
 .sound4 {
-    background: darkred;
+    background: red;
 }
 
 .sound5 {
@@ -357,35 +363,29 @@ Sounds.
 }
 
 
-}
-.sound6 .voice3 {
-/*
 
-    font-size: 5em;
-    transition: 0.5s;
-*/
-
-}
 
 .sound7 .voice3 {
     animation: groter 0.5s ease;
 }
 
 .sound8 {
-    background-color: darkred;
+    background-color: red;
 }
 
 .sound9 {
     background: black;
 }
-
+.sound23 {
+    background-color: white;
+}
 iframe {
     transition: 1s;
 }
 
 /* The moment the class .sound1 is added to the body, the movie (iframe) makes a turn  */
 .sound1 iframe {
-	transform: scale(1.2);
+	transform: scale(1.4);
     
 }
 .sound2 iframe {
@@ -397,10 +397,18 @@ iframe {
       -0.02em -0.01em 0 rgba(0, 255, 0, 0.75),
       -0.01em 0.02em 0 rgba(0, 0, 255, 0.75);
     animation: glitchvideo 500ms ;
-    animation-iteration-count: 42;
+    animation-iteration-count: 23;
 }
 
 .sound11 iframe {
+    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0,255,0,0.75),
+        0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitchvideo1 500ms ;
+    animation-iteration-count: 20;
+}
+
+.sound12 iframe {
     box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
         -0.025em -0.05em 0 rgba(0,255,0,0.75),
         0.025em 0.05em 0 rgba(0,0,255,0.75);
@@ -409,7 +417,7 @@ iframe {
 
     
 }
-.sound12 iframe {
+.sound13 iframe {
     box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
         -0.025em -0.05em 0 rgba(0,255,0,0.75),
         0.025em 0.05em 0 rgba(0,0,255,0.75);
@@ -417,16 +425,85 @@ iframe {
     animation-iteration-count: 12;
 }
 
-.sound13 iframe {
+.sound14 iframe {
     box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
         -0.025em -0.05em 0 rgba(0,255,0,0.75),
         0.025em 0.05em 0 rgba(0,0,255,0.75);
     animation: glitchvideo4 500ms ;
-    animation-iteration-count: 8;
+    animation-iteration-count: 9;
 }
 
-.sound14 iframe {
+.sound15 iframe {
     box-shadow: none;
+}
+.sound16 iframe {
+    transform: scale(1.2);
+    transition-duration: 4s;
+    
+    box-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0,255,0,0.75),
+        0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitchvideo 500ms ;
+    animation-iteration-count: 90;
+}
+
+.sound17 iframe {
+    transform: scale(0.7);
+    transition-duration: 6s;
+}
+
+.sound18 iframe {
+    transform: scale(1.2);
+    transition-duration: 6s;
+}
+.sound19 iframe {
+    transform: scale(0.6);
+    transition-duration: 6s;
+}
+
+.sound20 iframe {
+    transform: scale(1.2);
+    transition-duration: 6s;
+}
+.sound21 iframe {
+    transform: scale(0.7);
+    transition-duration: 6s;
+}
+.sound22 iframe {
+    transform: scale(1.4);
+    transition-duration: 7s;
+}
+
+/*omschrijving geluiden*/
+
+p.alarm {
+    opacity: 0;
+}
+p.peep{
+    opacity: 0;
+}
+.sound4 p.alarm {
+    opacity: 1;
+}
+
+.sound5 p.alarm {
+    opacity: 0;
+}
+
+.sound8 p.alarm {
+    opacity: 1;
+}
+
+.sound9 p.alarm {
+    opacity: 0;
+}
+
+.sound10 p.peep {
+    opacity: 1;
+}
+
+.sound15 p.peep {
+    opacity: 0;
 }
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
@@ -515,7 +592,7 @@ body {
   }
 }
 
-@keyframes glitchvideo2 {
+@keyframes glitchvideo1 {
   0% {
     box-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75),
       -0.2em -0.1em 0 rgba(0, 255, 0, 0.75),
@@ -524,7 +601,7 @@ body {
   14% {
     box-shadow: 0.2em 0 0 rgba(255, 0, 0, 0.75),
       -0.2em -0.1em 0 rgba(0, 255, 0, 0.75),
-      -0.05em 0.1em 0 rgba(0, 0, 255, 0.75);
+      -0.1em 0.2em 0 rgba(0, 0, 255, 0.75);
   }
   15% {
     box-shadow: -0.2em -0.1em 0 rgba(255, 0, 0, 0.75),
@@ -534,92 +611,129 @@ body {
   49% {
     box-shadow: -0.2em -0.1em 0 rgba(255, 0, 0, 0.75),
       0.1em 0.1em 0 rgba(0, 255, 0, 0.75),
-      -0.2em -0.2em 0 rgba(0, 0, 255, 0.75);
+      -0.2em -0.22em 0 rgba(0, 0, 255, 0.75);
   }
   50% {
-    box-shadow: 0.1em 0.2em 0 rgba(255, 0, 0, 0.75),
-      0.2em 0 0 rgba(0, 255, 0, 0.75), 0 -0.1em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.1em 0.22em 0 rgba(255, 0, 0, 0.75),
+      0.2em 0 0 rgba(0, 255, 0, 0.75), 0 -0.11em 0 rgba(0, 0, 255, 0.75);
   }
   99% {
-    box-shadow: 0.1em 0.2em 0 rgba(255, 0, 0, 0.75),
+    box-shadow: 0.2em 0.22em 0 rgba(255, 0, 0, 0.75),
       0.2em 0 0 rgba(0, 255, 0, 0.75), 0 -0.1em 0 rgba(0, 0, 255, 0.75);
   }
   100% {
     box-shadow: -0.1em 0 0 rgba(255, 0, 0, 0.75),
-      -0.1em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.1em -0.11em 0 rgba(0, 255, 0, 0.75),
       -0.1em -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+
+@keyframes glitchvideo2 {
+  0% {
+    box-shadow: 0.3em 0 0 rgba(255, 0, 0, 0.75),
+      -0.3em -0.2em 0 rgba(0, 255, 0, 0.75),
+      -0.2em 0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    box-shadow: 0.3em 0 0 rgba(255, 0, 0, 0.75),
+      -0.3em -0.2em 0 rgba(0, 255, 0, 0.75),
+      -0.1em 0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    box-shadow: -0.3em -0.2em 0 rgba(255, 0, 0, 0.75),
+      0.2em 0.2em 0 rgba(0, 255, 0, 0.75),
+      -0.3em -0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    box-shadow: -0.3em -0.2em 0 rgba(255, 0, 0, 0.75),
+      0.2em 0.2em 0 rgba(0, 255, 0, 0.75),
+      -0.3em -0.3em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    box-shadow: 0.3em 0.3em 0 rgba(255, 0, 0, 0.75),
+      0.3em 0 0 rgba(0, 255, 0, 0.75), 0 -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    box-shadow: 0.2em 0.3em 0 rgba(255, 0, 0, 0.75),
+      0.3em 0 0 rgba(0, 255, 0, 0.75), 0 -0.2em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    box-shadow: -0.2em 0 0 rgba(255, 0, 0, 0.75),
+      -0.2em -0.2em 0 rgba(0, 255, 0, 0.75),
+      -0.2em -0.3em 0 rgba(0, 0, 255, 0.75);
   }
 }
 
 @keyframes glitchvideo3 {
   0% {
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.75),
-      -0.4em -0.3em 0 rgba(0, 255, 0, 0.75),
-      -0.3em 0.4em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.5em 0 0 rgba(255, 0, 0, 0.75),
+      -0.5em -0.4em 0 rgba(0, 255, 0, 0.75),
+      -0.4em 0.5em 0 rgba(0, 0, 255, 0.75);
   }
   14% {
-    box-shadow: 0.4em 0 0 rgba(255, 0, 0, 0.75),
-      -0.4em -0.3em 0 rgba(0, 255, 0, 0.75),
-      -0.1em 0.3em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.5em 0 0 rgba(255, 0, 0, 0.75),
+      -0.5em -0.4em 0 rgba(0, 255, 0, 0.75),
+      -0.2em 0.4em 0 rgba(0, 0, 255, 0.75);
   }
   15% {
-    box-shadow: -0.4em -0.3em 0 rgba(255, 0, 0, 0.75),
-      0.3em 0.3em 0 rgba(0, 255, 0, 0.75),
-      -0.4em -0.4em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.5em -0.4em 0 rgba(255, 0, 0, 0.75),
+      0.4em 0.4em 0 rgba(0, 255, 0, 0.75),
+      -0.55em -0.5em 0 rgba(0, 0, 255, 0.75);
   }
   49% {
-    box-shadow: -0.4em -0.3em 0 rgba(255, 0, 0, 0.75),
-      0.3em 0.3em 0 rgba(0, 255, 0, 0.75),
-      -0.4em -0.4em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.6em -0.4em 0 rgba(255, 0, 0, 0.75),
+      0.4em 0.55em 0 rgba(0, 255, 0, 0.75),
+      -0.5em -0.5em 0 rgba(0, 0, 255, 0.75);
   }
   50% {
-    box-shadow: 0.3em 0.4em 0 rgba(255, 0, 0, 0.75),
-      0.4em 0 0 rgba(0, 255, 0, 0.75), 0 -0.3em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.4em 0.5em 0 rgba(255, 0, 0, 0.75),
+      0.5em 0 0 rgba(0, 255, 0, 0.75), 0 -0.44em 0 rgba(0, 0, 255, 0.75);
   }
   99% {
-    box-shadow: 0.3em 0.4em 0 rgba(255, 0, 0, 0.75),
-      0.4em 0 0 rgba(0, 255, 0, 0.75), 0 -0.3em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 0.4em 0.5em 0 rgba(255, 0, 0, 0.75),
+      0.5em 0 0 rgba(0, 255, 0, 0.75), 0 -0.44em 0 rgba(0, 0, 255, 0.75);
   }
   100% {
-    box-shadow: -0.3em 0 0 rgba(255, 0, 0, 0.75),
-      -0.3em -0.3em 0 rgba(0, 255, 0, 0.75),
-      -0.3em -0.4em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -0.5em 0 0 rgba(255, 0, 0, 0.75),
+      -0.4em -0.3em 0 rgba(0, 255, 0, 0.75),
+      -0.6em -0.4em 0 rgba(0, 0, 255, 0.75);
   }
 }
 
 @keyframes glitchvideo4 {
   0% {
-    box-shadow: 0.6em 0 0 rgba(255, 0, 0, 0.75),
-      -0.6em -0.05em 0 rgba(0, 255, 0, 0.75),
-      -0.5em 0.06em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 1em 0 0 rgba(255, 0, 0, 0.75),
+      -1em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -1em 0.2em 0 rgba(0, 0, 255, 0.75);
   }
   14% {
-    box-shadow: 0.6em 0 0 rgba(255, 0, 0, 0.75),
-      -0.6em -0.5em 0 rgba(0, 255, 0, 0.75),
-      -0.2em 0.5em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 1em 0 0 rgba(255, 0, 0, 0.75),
+      -1em -0.9em 0 rgba(0, 255, 0, 0.75),
+      -0.7em 1em 0 rgba(0, 0, 255, 0.75);
   }
   15% {
-    box-shadow: -0.06em -0.5em 0 rgba(255, 0, 0, 0.75),
-      0.6em 0.5em 0 rgba(0, 255, 0, 0.75),
-      -0.6em -0.6em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -1em -1em 0 rgba(255, 0, 0, 0.75),
+      1.1em 0.9em 0 rgba(0, 255, 0, 0.75),
+      -1.2em -1em 0 rgba(0, 0, 255, 0.75);
   }
   49% {
-    box-shadow: -0.6em -0.5em 0 rgba(255, 0, 0, 0.75),
-      0.6em 0.5em 0 rgba(0, 255, 0, 0.75),
-      -0.6em -0.5em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -1em -0.9em 0 rgba(255, 0, 0, 0.75),
+      1.1em 1em 0 rgba(0, 255, 0, 0.75),
+      -0.8em -0.9em 0 rgba(0, 0, 255, 0.75);
   }
   50% {
-    box-shadow: 0.6em 0.06em 0 rgba(255, 0, 0, 0.75),
-      0.6em 0 0 rgba(0, 255, 0, 0.75), 0 -0.5em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 1.1em 0.1em 0 rgba(255, 0, 0, 0.75),
+      0.7em 0 0 rgba(0, 255, 0, 0.75), 0 -1.1em 0 rgba(0, 0, 255, 0.75);
   }
   99% {
-    box-shadow: 0.6em 0.6em 0 rgba(255, 0, 0, 0.75),
-      0.6em 0 0 rgba(0, 255, 0, 0.75), 0 -0.5em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: 1em 1.1em 0 rgba(255, 0, 0, 0.75),
+      0.7em 0 0 rgba(0, 255, 0, 0.75), 0 -0.9em 0 rgba(0, 0, 255, 0.75);
   }
   100% {
-    box-shadow: -0.5em 0 0 rgba(255, 0, 0, 0.75),
-      -0.5em -0.05em 0 rgba(0, 255, 0, 0.75),
-      -0.5em -0.6em 0 rgba(0, 0, 255, 0.75);
+    box-shadow: -1em 0 0 rgba(255, 0, 0, 0.75),
+      -1.1em -0.1em 0 rgba(0, 255, 0, 0.75),
+      -0.4em -0.7em 0 rgba(0, 0, 255, 0.75);
   }
 }
 
